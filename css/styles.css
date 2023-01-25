@@ -1,0 +1,98 @@
+:root {
+  --primary-text-color: #434455;
+  --primary-headings-color: #2e2f42;
+  --accent-color: #e7e9fc;
+  --nav-color: #2e2f42;
+  --nav-active-color: #404bbf;
+  --contact-color: #434455;
+  --bcg-btn-color: #f4f4fd;
+  --bcg-active-btn-color: #404bbf;
+  --text-btn-color: #4d5ae5;
+  --text-active-btn-color: #ffffff;
+  --hero-title-color: #ffffff;
+  --hero-bcg-color: #2e2f42;
+  --bcg-hero-btn-color: #4d5ae5;
+  --bcg-hero-hover-btn-color: #404bbf;
+  --hero-text-button-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+
+.logo.link,
+.contacts-list .link {
+  text-decoration: none;
+}
+/* SITE NAV */
+.site-nav .link {
+  color: var(--nav-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--nav-active-color);
+}
+.site-nav .link.current {
+  color: var(--nav-active-color);
+}
+
+/* CONTACTS */
+.address {
+  font-style: normal;
+}
+.contacts-list .link {
+  color: var(--contact-color);
+}
+
+/* HERO */
+.hero-section {
+}
+
+.hero-title {
+  background-color: var(--hero-bcg-color);
+  color: var(--hero-title-color);
+}
+
+.hero-btn {
+  color: var(--hero-text-button-color);
+  background-color: var(--bcg-hero-btn-color);
+}
+.hero-btn:hover {
+  background-color: var(--bcg-hero-hover-btn-color);
+}
+/* SECTIONS */
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-headings-color);
+}
+.section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* FEATURES */
+.fetures {
+}
+.feature-title {
+  color: var(--primary-headings-color);
+}
+.title-secret {
+}
+
+/* What are we doing */
+
+/* TEAM */
+
+/* CSS for PORTFOLIO */
