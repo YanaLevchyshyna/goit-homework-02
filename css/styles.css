@@ -105,6 +105,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-text-button-color);
   background-color: var(--bcg-hero-btn-color);
+  cursor: pointer;
 }
 .hero-btn:is(:hover, :focus) {
   background-color: var(--bcg-hero-hover-btn-color);
@@ -139,6 +140,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--portfolio-main-text-btn-color);
   background-color: var(--portfolio-main-bcg-btn-color);
+  cursor: pointer;
 }
 .button:is(:hover, :focus) {
   color: var(--portfolio-hover-text-btn-color);
