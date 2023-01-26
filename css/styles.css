@@ -2,9 +2,9 @@
   --primary-text-color: #434455;
   --primary-headings-color: #2e2f42;
   --accent-color: #e7e9fc;
-  --nav-color: #2e2f42;
-  --nav-active-color: #404bbf;
-  --contact-color: #434455;
+  --nav-link-color: #2e2f42;
+  --nav-active-link-color: #404bbf;
+  --primary-contact-color: #434455;
   --bcg-btn-color: #f4f4fd;
   --bcg-active-btn-color: #404bbf;
   --text-btn-color: #4d5ae5;
@@ -14,6 +14,13 @@
   --bcg-hero-btn-color: #4d5ae5;
   --bcg-hero-hover-btn-color: #404bbf;
   --hero-text-button-color: #ffffff;
+  --portfolio-main-text-btn-color: #4d5ae5;
+  --portfolio-hover-text-btn-color: #ffffff;
+  --portfolio-main-bcg-btn-color: #f4f4fd;
+  --portfolio-hover-bcg-btn-color: #404bbf;
+  --portfolio-border-btn-color: #e7e9fc;
+  --footer-text-color: #e7e9fc;
+  --footer-bcg-color: #2e2f42;
 }
 
 body {
@@ -28,45 +35,19 @@ body {
 .contacts-list .link {
   text-decoration: none;
 }
-/* SITE NAV */
-.site-nav .link {
-  color: var(--nav-color);
-}
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: var(--nav-active-color);
-}
-.site-nav .link.current {
-  color: var(--nav-active-color);
+
+/* -----------------SECTIONS---general properties--------------- */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-headings-color);
 }
 
-/* CONTACTS */
-.address {
-  font-style: normal;
-}
-.contacts-list .link {
-  color: var(--contact-color);
-}
-
-/* HERO */
-.hero-section {
-}
-
-.hero-title {
-  background-color: var(--hero-bcg-color);
-  color: var(--hero-title-color);
-}
-
-.hero-btn {
-  color: var(--hero-text-button-color);
-  background-color: var(--bcg-hero-btn-color);
-}
-.hero-btn:hover {
-  background-color: var(--bcg-hero-hover-btn-color);
-}
-/* SECTIONS */
 .section-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -79,20 +60,96 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
 }
 
-/* FEATURES */
-.fetures {
+/*----------------SITE NAV------------------ */
+.site-nav .link {
+  color: var(--nav-link-color);
 }
+.site-nav .link:is(:hover, :focus),
+.contacts-list .link:is(:hover, :focus) {
+  color: var(--nav-active-link-color);
+}
+.site-nav .link.current {
+  color: var(--nav-active-link-color);
+}
+
+/* ----------------CONTACTS------------------ */
+.address {
+  font-style: normal;
+}
+.contacts-list .link {
+  color: var(--primary-contact-color);
+}
+
+/* -----------------HERO---------------- */
+/* .hero-section {
+} */
+
+.hero-title {
+  background-color: var(--hero-bcg-color);
+  color: var(--hero-title-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-text-button-color);
+  background-color: var(--bcg-hero-btn-color);
+}
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--bcg-hero-hover-btn-color);
+}
+
+/* -----------------FEATURES------------------ 
+.fetures {
+} */
+
 .feature-title {
   color: var(--primary-headings-color);
 }
-.title-secret {
+/* .title-secret {
+} */
+
+/* ---------------What are we doing---------- */
+
+/* ---------------TEAM--------------------*/
+
+/* ---------------CSS for PORTFOLIO--------------- */
+
+.button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--portfolio-main-text-btn-color);
+  background-color: var(--portfolio-main-bcg-btn-color);
+}
+.button:is(:hover, :focus) {
+  color: var(--portfolio-hover-text-btn-color);
+  background-color: var(--portfolio-hover-bcg-btn-color);
 }
 
-/* What are we doing */
-
-/* TEAM */
-
-/* CSS for PORTFOLIO */
+/* -------------FOOTER---------------- */
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+  background-color: var(--footer-bcg-color);
+}
