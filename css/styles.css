@@ -117,8 +117,9 @@ body {
 .feature-title {
   color: var(--primary-headings-color);
 }
-/* .title-secret {
-} */
+.title-secret {
+  visibility: hidden;
+}
 
 /* ---------------What are we doing---------- */
 
