@@ -21,6 +21,10 @@
   --portfolio-border-btn-color: #e7e9fc;
   --footer-text-color: #e7e9fc;
   --footer-bcg-color: #2e2f42;
+  --logo-web-color: #4d5ae5;
+  --logo-studio-color: #2e2f42;
+  --logo-footer-studio-color: #f4f4fd;
+  --team-seaction-bcg-color: #f4f4fd;
 }
 
 body {
@@ -31,8 +35,7 @@ body {
   list-style: none;
 }
 
-.logo.link,
-.contacts-list .link {
+.link {
   text-decoration: none;
 }
 
@@ -62,8 +65,36 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* -----------LOGO--------------------- 
+*/
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-web-color);
+}
+
+.logo-studio {
+  color: var(--logo-studio-color);
+}
+.footer-logo {
+  color: var(--logo-footer-studio-color);
+}
 /*----------------SITE NAV------------------ */
 .site-nav .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
   color: var(--nav-link-color);
 }
 .site-nav .link:is(:hover, :focus),
@@ -79,21 +110,25 @@ body {
   font-style: normal;
 }
 .contacts-list .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-contact-color);
 }
 
 /* -----------------HERO---------------- */
-/* .hero-section {
-} */
+.hero-section {
+  background-color: var(--hero-bcg-color);
+}
 
 .hero-title {
-  background-color: var(--hero-bcg-color);
-  color: var(--hero-title-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--hero-title-color);
 }
 
 .hero-btn {
@@ -126,6 +161,10 @@ body {
 
 /* ---------------TEAM--------------------*/
 
+.team-section {
+  background-color: var(--team-seaction-bcg-color);
+}
+
 /* ---------------CSS for PORTFOLIO--------------- */
 
 .button {
@@ -138,10 +177,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+
   color: var(--portfolio-main-text-btn-color);
   background-color: var(--portfolio-main-bcg-btn-color);
   cursor: pointer;
 }
+
 .button:is(:hover, :focus) {
   color: var(--portfolio-hover-text-btn-color);
   background-color: var(--portfolio-hover-bcg-btn-color);
@@ -149,10 +190,11 @@ body {
 
 /* -------------FOOTER---------------- */
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
+}
+.footer-section {
   background-color: var(--footer-bcg-color);
 }
